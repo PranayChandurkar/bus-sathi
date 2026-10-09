@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Accent Palette (Light Mode) -->
+    <color name="color_primary">#2563EB</color>
+    <color name="color_primary_variant">#1D4ED8</color>
+    <color name="color_secondary">#14B8A6</color>
+    <color name="color_secondary_variant">#0D9488</color>
+
+    <!-- Background & Surface (Light Mode) -->
+    <color name="bg_app">#F7F7F7</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="surface_elevated">#F0F0F0</color>
+    <color name="border_subtle">#E5E5E5</color>
+    <color name="divider">#E5E5E5</color>
+    <color name="input_bg">#FFFFFF</color>
+
+    <!-- Typography (Light Mode) -->
+    <color name="text_primary">#111111</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_muted">#888888</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- Status Colors -->
+    <color name="success">#22C55E</color>
+    <color name="warning">#F59E0B</color>
+    <color name="error">#EF4444</color>
+
+    <!-- Badges & Accents (Light Mode) -->
+    <color name="badge_bg">#EFF6FF</color>
+    <color name="badge_text">#2563EB</color>
+    <color name="badge_secondary_bg">#F0FDF4</color>
+    <color name="badge_secondary_text">#16A34A</color>
+
+    <!-- Disabled / Inactive -->
+    <color name="disabled">#CCCCCC</color>
+
+    <!-- Legacy / Compatibility Aliases -->
+    <color name="primary">@color/color_primary</color>
+    <color name="primary_dark">@color/color_primary_variant</color>
+    <color name="accent">@color/color_secondary</color>
+    <color name="bg_light">@color/bg_app</color>
+    <color name="card_bg">@color/surface_card</color>
+    <color name="admin_bg">@color/bg_app</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

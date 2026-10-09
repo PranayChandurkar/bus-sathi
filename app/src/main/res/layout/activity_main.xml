@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modern, Clean & Responsive Home Screen – BusSathi -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="32dp">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Logo Icon Badge -->
+            <FrameLayout
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/bg_pill_badge">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_bus"
+                    app:tint="@color/color_primary" />
+            </FrameLayout>
+
+            <!-- App Title -->
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/app_name"
+                android:textColor="@color/text_primary"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/txtSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@string/app_subtitle"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <!-- Route Badge -->
+            <TextView
+                android:id="@+id/txtRoute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_pill_badge"
+                android:paddingStart="16dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="6dp"
+                android:text="@string/route_label"
+                android:textColor="@color/badge_text"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Section Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="12dp"
+            android:text="QUICK ACTIONS"
+            android:textColor="@color/text_muted"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <!-- 1. Bus Schedule Card Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBusSchedule"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:minHeight="68dp"
+            android:gravity="start|center_vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:text="Bus Schedule\nCheck bus timings"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            app:backgroundTint="@color/surface_card"
+            app:cornerRadius="18dp"
+            app:elevation="2dp"
+            app:icon="@drawable/ic_bus"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/color_primary"
+            app:strokeColor="@color/border_subtle"
+            app:strokeWidth="1dp" />
+
+        <!-- 2. Route & Stops Card Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRoute"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:minHeight="68dp"
+            android:gravity="start|center_vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:text="Route &amp; Stops\nView complete route"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            app:backgroundTint="@color/surface_card"
+            app:cornerRadius="18dp"
+            app:elevation="2dp"
+            app:icon="@drawable/ic_route"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/color_secondary"
+            app:strokeColor="@color/border_subtle"
+            app:strokeWidth="1dp" />
+
+        <!-- 3. My Stop Card Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMyStop"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:minHeight="68dp"
+            android:gravity="start|center_vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:text="My Stop\nView your selected stop"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            app:backgroundTint="@color/surface_card"
+            app:cornerRadius="18dp"
+            app:elevation="2dp"
+            app:icon="@drawable/ic_my_stop"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/warning"
+            app:strokeColor="@color/border_subtle"
+            app:strokeWidth="1dp" />
+
+        <!-- 4. Admin Card Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAdmin"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:minHeight="68dp"
+            android:gravity="start|center_vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:text="Admin\nManage bus information"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            app:backgroundTint="@color/surface_card"
+            app:cornerRadius="18dp"
+            app:elevation="2dp"
+            app:icon="@drawable/ic_admin"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/color_primary"
+            app:strokeColor="@color/border_subtle"
+            app:strokeWidth="1dp" />
+
+        <!-- Academic Prototype Notice -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/surface_card"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/border_subtle"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/txtDemoNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="16dp"
+                android:text="@string/demo_note"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

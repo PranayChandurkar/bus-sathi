@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modern list item for schedule row in timetable view -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="12dp">
+
+    <!-- Stop Name -->
+    <TextView
+        android:id="@+id/txtSchedStopName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:text="Stop"
+        android:textColor="@color/text_primary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!-- Arrival -->
+    <TextView
+        android:id="@+id/txtSchedArrival"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="Arr"
+        android:textColor="@color/color_primary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Departure -->
+    <TextView
+        android:id="@+id/txtSchedDeparture"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="Dep"
+        android:textColor="@color/color_secondary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

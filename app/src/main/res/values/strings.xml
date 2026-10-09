@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BusSathi</string>
+    <string name="app_subtitle">College Bus Route &amp; Schedule Assistant</string>
+    <string name="route_label">College ↔ Kathora</string>
+    <string name="demo_note">Demo timetable data is used for this academic prototype and can be updated by the administrator.</string>
+
+    <!-- Directions -->
+    <string name="dir_to_kathora">College → Kathora</string>
+    <string name="dir_to_college">Kathora → College</string>
+
+    <!-- Main buttons -->
+    <string name="btn_bus_schedule">Bus Schedule</string>
+    <string name="btn_route_stops">Route &amp; Stops</string>
+    <string name="btn_my_stop">My Stop</string>
+    <string name="btn_admin_login">Admin Login</string>
+
+    <!-- Admin -->
+    <string name="btn_add_stop">Add Stop</string>
+    <string name="btn_edit_stop">Edit Stop</string>
+    <string name="btn_delete_stop">Delete Stop</string>
+    <string name="btn_manage_timings">Manage Timings</string>
+    <string name="btn_view_timetable">View Timetable</string>
+    <string name="btn_logout">Logout</string>
+
+    <!-- Labels -->
+    <string name="lbl_username">Username</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_login">Login</string>
+    <string name="lbl_stop_name">Stop Name</string>
+    <string name="lbl_stop_order">Stop Order</string>
+    <string name="lbl_save">Save</string>
+    <string name="lbl_update">Update</string>
+    <string name="lbl_cancel">Cancel</string>
+    <string name="lbl_search">Search stops…</string>
+    <string name="lbl_announce">🔊 Announce</string>
+    <string name="lbl_view_map">📍 View Route on Map</string>
+    <string name="lbl_select_stop">Select Stop</string>
+    <string name="lbl_get_timing">Get Timing</string>
+    <string name="lbl_arrival">Arrival</string>
+    <string name="lbl_departure">Departure</string>
+    <string name="lbl_set_arrival">Set Arrival Time</string>
+    <string name="lbl_set_departure">Set Departure Time</string>
+    <string name="lbl_my_stop">My Stop</string>
+    <string name="lbl_save_stop">Save as My Stop</string>
+    <string name="lbl_no_stop_saved">No stop saved yet</string>
+    <string name="lbl_about">About</string>
+</resources>

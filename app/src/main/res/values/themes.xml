@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (Light) -->
+    <style name="Base.Theme.BusSathi" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Brand Colors -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant</item>
+
+        <!-- Background & Surface -->
+        <item name="android:colorBackground">@color/bg_app</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="android:windowBackground">@color/bg_app</item>
+
+        <!-- Text Colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <!-- Status Bar & Navigation Bar -->
+        <item name="android:statusBarColor">@color/bg_app</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/bg_app</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+
+        <!-- RadioButton style with high-contrast visible accent and text -->
+        <item name="radioButtonStyle">@style/Widget.BusSathi.RadioButton</item>
+    </style>
+
+    <style name="Widget.BusSathi.RadioButton" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="buttonTint">@color/color_primary</item>
+    </style>
+
+    <style name="Theme.BusSathi" parent="Base.Theme.BusSathi" />
+</resources>
